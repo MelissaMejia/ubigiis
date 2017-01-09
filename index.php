@@ -14,5 +14,5 @@ file_put_contents($fileName, $decodificarimagen, 0, $context);
 
 $publicUrl = CloudStorageTools::getPublicUrl($fileName, false);
 echo "provando..";
-echo $publicUrl;
+
   ?>
