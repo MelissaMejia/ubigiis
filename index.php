@@ -9,7 +9,7 @@ $fileName = "gs://${imagenes_ubigiis}/".$image_name.".JPG";
 if (file_put_contents($fileName, $decodificarimagen)){
  echo "subido";
 }else{
-echo "no carga";
+echo "no carga". $image_name;
 }}
 echo "prueba";
 
