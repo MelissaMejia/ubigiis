@@ -6,10 +6,11 @@
  $decodificarimagen=base64_decode("$image");
 
 $fileName = "gs://${imagenes_ubigiis}/".$image_name.".JPG";
-file_put_contents($fileName, $decodificarimagen);
-
-echo "probando";
-}
-echo "probar";
+if (file_put_contents($fileName, $decodificarimagen)){
+ echo "subido";
+}else{
+echo "no carga";
+}}
+echo "prueba";
 
   ?>
