@@ -1,6 +1,6 @@
 <?php
 use google\appengine\api\cloud_storage\CloudStorageTools;
-
+echo "provando..";
  if($_SERVER['REQUEST_METHOD']=='POST'){
  
  $image = $_POST['image'];
@@ -13,7 +13,6 @@ $fileName = "gs://${imagenes_ubigiis}/".$image_name.".JPG";
 file_put_contents($fileName, $decodificarimagen, 0, $context);
 
 $publicUrl = CloudStorageTools::getPublicUrl($fileName, false);
-echo "provando..";
 echo $publicUrl;
 }
   ?>
