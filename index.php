@@ -13,10 +13,10 @@ $fileName = "gs://${imagenes_ubigiis}/".$image_name.".JPG";
 file_put_contents($fileName, $decodificarimagen, 0, $context);
 
 $publicUrl = CloudStorageTools::getPublicUrl($fileName, false);
-echo $image;  
+echo $image_name ;  
 echo $publicUrl;
   
 }
 echo "provando..";
-echo $image; 
+echo $image_name ; 
   ?>
